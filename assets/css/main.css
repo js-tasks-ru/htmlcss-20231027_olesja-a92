@@ -4,7 +4,6 @@
 @import '../../components/content/content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/navigation/navigation.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
     --white: #ffffff;
@@ -23,6 +22,7 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+	--container-width: 1110px;
 }
 
 * {
@@ -30,7 +30,7 @@
 }
 
 .container {
-	max-width: 1110px;
+	max-width: var(--container-width);
 	margin:0 auto;
 }
 
