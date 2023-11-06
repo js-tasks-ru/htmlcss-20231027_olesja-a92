@@ -25,7 +25,7 @@
     --primary_hover: #2342C0;
     --secondary: var(--purple);
     --secondary_hover: #5028C6;
-	--container-width: 1110px;
+	  --container-width: 1110px;
 }
 
 * {
