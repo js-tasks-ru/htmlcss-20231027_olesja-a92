@@ -1,4 +1,10 @@
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/content/content.css';
+@import '../../components/footer/footer.css';
+@import '../../components/navigation/navigation.css';
+@import '../../components/container/container.css';
 
 :root {
     --white: #ffffff;
@@ -17,8 +23,11 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+	--container-width: 1110px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+
