@@ -28,14 +28,14 @@
     padding-bottom: 32px;
 }
 
-.accordion__item .accordion__summary{
+.accordion__summary{
     cursor: pointer;
     color: #000;
     display: flex;
     justify-content: space-between;
 }
 
-.accordion__item .accordion__summary::-webkit-details-marker {
+.accordion__summary::-webkit-details-marker {
     display: none
 }
 
@@ -43,7 +43,7 @@
     list-style: none;
 }
 
-.accordion__item .accordion__summary:after {
+.accordion__summary:after {
     content: url("../../assets/images/accordion_bottom.svg");
     width: 16px;
     height: 8px;
