@@ -10,7 +10,7 @@
     line-height: normal;
     border-radius: 8px;
     min-width: 182px;
-	padding: 15px 0px 14px 0px;
+    padding: 15px 20px 14px 20px;
     border: none;
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
