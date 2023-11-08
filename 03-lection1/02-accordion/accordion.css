@@ -6,7 +6,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    max-width:730px;
 }
 
 .accordion__item{
@@ -29,27 +28,27 @@
     padding-bottom: 32px;
 }
 
-.accordion__item summary{
+.accordion__item .accordion__summary{
     cursor: pointer;
     color: #000;
     display: flex;
     justify-content: space-between;
 }
 
-.accordion__item summary::-webkit-details-marker {
+.accordion__item .accordion__summary::-webkit-details-marker {
     display: none
 }
 
-.accordion__item > summary {
+.accordion__item > .accordion__summary {
     list-style: none;
 }
 
-.accordion__item summary:after {
+.accordion__item .accordion__summary:after {
     content: url("../../assets/images/accordion_bottom.svg");
     width: 16px;
     height: 8px;
 }
 
-.accordion__item[open] summary:after {
+.accordion__item[open] .accordion__summary:after {
     content: url("../../assets/images/accordion_top.svg");
 }
