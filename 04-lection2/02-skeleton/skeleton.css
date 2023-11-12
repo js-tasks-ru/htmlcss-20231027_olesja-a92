@@ -30,14 +30,14 @@
     height: 64px;
 }
 
-.skeleton__line_width40{
+.skeleton__line_small{
     width: 40%;
 }
 
-.skeleton__line_width60{
+.skeleton__line_middle{
     width: 60%;
 }
 
-.skeleton__line_width80{
+.skeleton__line_large{
     width: 80%;
 }
