@@ -2,3 +2,10 @@
 	background: #F9FAFC;
 	padding: 68px 0;
 }
+
+.content__cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
