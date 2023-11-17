@@ -22,6 +22,9 @@
     --error: var(--red);
     --success: var(--blue);
 
+    --calendar-item: #334D6E;
+    --calendar-day: #90A0B7;
+
     --primary: var(--blue);
     --primary_hover: #2342C0;
     --secondary: var(--purple);
