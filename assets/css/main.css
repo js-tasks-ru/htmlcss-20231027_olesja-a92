@@ -19,6 +19,9 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    --modal-title: #334D6E;
+    --modal-overlay: #C4C4C4;
+
     --error: var(--red);
     --success: var(--blue);
 
@@ -26,7 +29,7 @@
     --primary_hover: #2342C0;
     --secondary: var(--purple);
     --secondary_hover: #5028C6;
-	  --container-width: 1110px;
+    --container-width: 1110px;
 }
 
 * {
