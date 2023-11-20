@@ -24,6 +24,7 @@
 
     --calendar-item: #334D6E;
     --calendar-day: #90A0B7;
+    --calendar-period: rgba(160, 177, 245, 0.2);
 
     --primary: var(--blue);
     --primary_hover: #2342C0;
