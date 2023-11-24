@@ -1,5 +1,7 @@
 .header {
 	background: #FFF;
+	min-height: 82px;
+	height: max-content;
 }
 
 .header__title{
