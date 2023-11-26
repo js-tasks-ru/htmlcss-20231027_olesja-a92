@@ -1,0 +1,10 @@
+.avatar{
+    max-width: 160px;
+}
+
+.avatar__img{
+    object-fit: cover;
+    border-radius: 100%;
+    object-position: center;
+    width: 100%;
+}
