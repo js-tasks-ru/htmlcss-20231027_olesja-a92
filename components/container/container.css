@@ -2,9 +2,3 @@
 	max-width: var(--container-width);
 	margin: 0 auto;
 }
-
-.container_inner{
-	display:grid;
-	grid-template-columns: 229px 1fr;
-	gap: 56px;
-}

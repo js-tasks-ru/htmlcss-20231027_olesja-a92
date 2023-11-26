@@ -9,6 +9,7 @@
 @import '../../components/aside/aside.css';
 @import '../../components/inner-navigation/inner-navigation.css';
 @import '../../components/inner-content/inner-content.css';
+@import '../../components/inner-container/inner-container.css';
 
 :root {
     --white: #ffffff;
