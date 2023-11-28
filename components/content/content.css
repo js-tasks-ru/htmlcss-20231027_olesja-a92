@@ -1,6 +1,10 @@
 .content{
-	background: #F9FAFC;
+	background: var(--content-background);
 	padding: 68px 0;
+}
+
+.content_inner{
+	padding: 36px 0;
 }
 
 .content__cards{
