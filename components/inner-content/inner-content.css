@@ -17,3 +17,11 @@
 .inner-content__text{
     margin-top: 24px;
 }
+
+@media screen and (max-width: 400px) {
+    .inner-content {
+        filter: none;
+        padding: 0;
+        width: 100%;
+    }
+}

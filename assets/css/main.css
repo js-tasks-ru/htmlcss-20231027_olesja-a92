@@ -43,6 +43,12 @@
     --notificaiton: #D84910;
 }
 
+@media screen and (max-width:400px) {
+    :root {
+        --container-width: 344px;
+    }
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }

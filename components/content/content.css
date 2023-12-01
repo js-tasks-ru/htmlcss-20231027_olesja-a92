@@ -8,8 +8,27 @@
 }
 
 .content__cards{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(164px,350px));
+	justify-content: center;
 	gap: 30px;
+}
+
+@media screen and (max-width:400px) {
+	.content{
+		padding: 24px 0;
+	}
+
+	.content__cards {
+		grid-template-columns: repeat(auto-fill, minmax(164px,1fr));
+		gap: 16px;
+	}
+
+	.content_inner{
+		background: #fff;
+	}
+
+	.content_inner{
+		padding: 32px 0;
+	}
 }
