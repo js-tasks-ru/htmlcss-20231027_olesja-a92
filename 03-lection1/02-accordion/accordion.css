@@ -33,6 +33,7 @@
     color: #000;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -43,12 +44,15 @@
     list-style: none;
 }
 
-.accordion__summary:after {
-    content: url("../../assets/images/accordion_bottom.svg");
-    width: 16px;
-    height: 8px;
+.accordion__arrow {
+    width: 19px;
+    height: 12px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.accordion__item[open] .accordion__summary:after {
-    content: url("../../assets/images/accordion_top.svg");
+.accordion__item[open] .accordion__arrow {
+    transform: translateY(-50%) rotate(180deg);
 }

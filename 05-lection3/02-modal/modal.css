@@ -44,7 +44,6 @@
 }
 
 .modal__close{
-    background: url("../../assets/images/x.svg") no-repeat;
     position: absolute;
     top: 12px;
     right: 12px;
