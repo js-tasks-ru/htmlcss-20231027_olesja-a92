@@ -56,6 +56,10 @@
     background: var(--grey-2);
 }
 
+.radio__input:disabled ~ .radio__state{
+    cursor: default;
+}
+
 .radio__input:disabled ~ .radio__state .radio__title{
     color: var(--grey-2);
 }
