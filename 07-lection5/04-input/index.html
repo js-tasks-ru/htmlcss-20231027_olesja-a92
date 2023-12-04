@@ -6,6 +6,16 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-
+        <div class="input">
+            <input type="text" placeholder="Placeholder" class="input__text">
+        </div>
+        <div class="input" style="margin-top:20px">
+            <input type="text" placeholder="Placeholder" value="Success" class="input__text input_success">
+            <svg class="input__icon" viewBox="0 0 24 24"><use xlink:href="../../assets/images/icons.svg#success"></svg>
+        </div>
+        <div class="input" style="margin-top:20px">
+            <input type="text" placeholder="Placeholder" value="Error" class="input__text input_error">
+            <svg class="input__icon" viewBox="0 0 24 24"><use xlink:href="../../assets/images/icons.svg#error"></svg>
+        </div>
     </body>
 </html>
