@@ -54,6 +54,10 @@
     color: var(--grey-2);
 }
 
+.checkbox__input:disabled ~ .checkbox__state{
+    cursor: default;
+}
+
 .checkbox__input:disabled ~ .checkbox__state .checkbox__icon{
     stroke: var(--grey-2);
 }
