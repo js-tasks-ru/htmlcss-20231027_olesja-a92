@@ -1,8 +1,48 @@
-.navigation__item{
+.tabs__item{
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 24px; 
+	line-height: 36px;
 	color: var(--grey-3);
+	cursor: pointer;
+}
+
+.tabs__input{
+	position: absolute;
+	left:-100vw;
+}
+
+.tabs__content{
+	display: none;
+}
+
+#all-tab:checked ~ .tabs__content.tabs__content_all,
+#complex-tab:checked ~ .tabs__content.tabs__content_complex,
+#simple-tab:checked ~ .tabs__content.tabs__content_simple{
+	display: grid;
+}
+
+#all-tab:checked ~ .tabs__scroller label[for='all-tab'],
+#complex-tab:checked ~ .tabs__scroller label[for='complex-tab'],
+#simple-tab:checked ~ .tabs__scroller label[for='simple-tab']{
+	color: var(--black);
+	border-bottom: 5px solid black;
+}
+
+.tabs{
+	position: relative;
+}
+
+.tabs__scroller{
+	position: absolute;
+	top: -109px;
+	display: flex;
+	gap: 40px;
+}
+
+@media screen and (max-width:400px) {
+	.tabs__scroller{
+		display:none;
+	}
 }

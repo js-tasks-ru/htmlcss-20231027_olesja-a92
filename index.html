@@ -27,123 +27,256 @@
 			</header>
 			<main class="content">
 				<div class="container">
-					<div class="content__cards">
-						<div class="card">
-							<div class="card__content"></div>
-							<div class="card__title">Tooltip</div>
+					<div class="tabs">
+						<input class="tabs__input" type="radio" name="menu" id="all-tab" checked>
+						<input class="tabs__input" type="radio" name="menu" id="complex-tab">
+						<input class="tabs__input" type="radio" name="menu" id="simple-tab">
+
+						<div class="tabs__scroller">
+							<label class="tabs__item" for="all-tab">All components</label>
+							<label class="tabs__item" for="complex-tab">Complex</label>
+							<label class="tabs__item" for="simple-tab">Simple</label>
 						</div>
-						<div class="card">
-							<div class="card__content"></div>
-							<div class="card__title">Custom form elements</div>
-						</div>
-						<div class="card">
-							<div class="card__content">
-								<div class="card__element calendar calendar_card">
-								<div class="calendar__title">October 2019</div>
-								<div class="calendar__wrapper">
-									<div class="calendar__inner">
-										<span class="calendar__item calendar__item_day">Mon</span>
-										<span class="calendar__item calendar__item_day">Tue</span>
-										<span class="calendar__item calendar__item_day">Wed</span>
-										<span class="calendar__item calendar__item_day">Thu</span>
-										<span class="calendar__item calendar__item_day">Fri</span>
-										<span class="calendar__item calendar__item_day">Sat</span>
-										<span class="calendar__item calendar__item_day">Sun</span>
-										<span class="calendar__item"></span>
-										<span class="calendar__item"></span>
-										<span class="calendar__item"></span>
-										<span class="calendar__item"></span>
-										<span class="calendar__item">1</span>
-										<span class="calendar__item">2</span>
-										<span class="calendar__item">3</span>
-										<span class="calendar__item">4</span>
-										<span class="calendar__item">5</span>
-										<span class="calendar__item">6</span>
-										<span class="calendar__item">7</span>
-										<span class="calendar__item">8</span>
-										<span class="calendar__item">9</span>
-										<span class="calendar__item">10</span>
-										<span class="calendar__item">11</span>
-										<span class="calendar__item">12</span>
-										<span class="calendar__item">13</span>
-										<span class="calendar__item">14</span>
-										<span class="calendar__item">15</span>
-										<span class="calendar__item">16</span>
-										<span class="calendar__item">17</span>
-										<span class="calendar__item calendar__item_periodpoint">18</span>
-										<span class="calendar__item calendar__item_period">19</span>
-										<span class="calendar__item calendar__item_period">20</span>
-										<span class="calendar__item calendar__item_period">21</span>
-										<span class="calendar__item calendar__item_period">22</span>
-										<span class="calendar__item calendar__item_periodpoint">23</span>
-										<span class="calendar__item">24</span>
-										<span class="calendar__item">25</span>
-										<span class="calendar__item">26</span>
-										<span class="calendar__item">27</span>
-										<span class="calendar__item">28</span>
-										<span class="calendar__item">29</span>
-										<span class="calendar__item">30</span>
-										<span class="calendar__item">31</span>
+
+						<div class="tabs__content tabs__content_all content__cards">
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Tooltip</div>
+							</div>
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Custom form elements</div>
+							</div>
+							<div class="card">
+								<div class="card__content">
+									<div class="card__element calendar calendar_card">
+										<div class="calendar__title">October 2019</div>
+										<div class="calendar__wrapper">
+											<div class="calendar__inner">
+												<span class="calendar__item calendar__item_day">Mon</span>
+												<span class="calendar__item calendar__item_day">Tue</span>
+												<span class="calendar__item calendar__item_day">Wed</span>
+												<span class="calendar__item calendar__item_day">Thu</span>
+												<span class="calendar__item calendar__item_day">Fri</span>
+												<span class="calendar__item calendar__item_day">Sat</span>
+												<span class="calendar__item calendar__item_day">Sun</span>
+												<span class="calendar__item"></span>
+												<span class="calendar__item"></span>
+												<span class="calendar__item"></span>
+												<span class="calendar__item"></span>
+												<span class="calendar__item">1</span>
+												<span class="calendar__item">2</span>
+												<span class="calendar__item">3</span>
+												<span class="calendar__item">4</span>
+												<span class="calendar__item">5</span>
+												<span class="calendar__item">6</span>
+												<span class="calendar__item">7</span>
+												<span class="calendar__item">8</span>
+												<span class="calendar__item">9</span>
+												<span class="calendar__item">10</span>
+												<span class="calendar__item">11</span>
+												<span class="calendar__item">12</span>
+												<span class="calendar__item">13</span>
+												<span class="calendar__item">14</span>
+												<span class="calendar__item">15</span>
+												<span class="calendar__item">16</span>
+												<span class="calendar__item">17</span>
+												<span class="calendar__item calendar__item_periodpoint">18</span>
+												<span class="calendar__item calendar__item_period">19</span>
+												<span class="calendar__item calendar__item_period">20</span>
+												<span class="calendar__item calendar__item_period">21</span>
+												<span class="calendar__item calendar__item_period">22</span>
+												<span class="calendar__item calendar__item_periodpoint">23</span>
+												<span class="calendar__item">24</span>
+												<span class="calendar__item">25</span>
+												<span class="calendar__item">26</span>
+												<span class="calendar__item">27</span>
+												<span class="calendar__item">28</span>
+												<span class="calendar__item">29</span>
+												<span class="calendar__item">30</span>
+												<span class="calendar__item">31</span>
+											</div>
+										</div>
 									</div>
 								</div>
+								<div class="card__title">Calendar</div>
 							</div>
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Modal dialog</div>
 							</div>
-							<div class="card__title">Calendar</div>
-						</div>
-						<div class="card">
-							<div class="card__content"></div>
-							<div class="card__title">Modal dialog</div>
-						</div>
-						<div class="card">
-							<div class="card__content">
-								<div class="card__element histogram histogram_card">
-								<div class="histogram__header">
-									<div class="histogram__title">Total orders</div>
-									<a href="#" class="histogram__link">View all</a>
+							<div class="card">
+								<div class="card__content">
+									<div class="card__element histogram histogram_card">
+										<div class="histogram__header">
+											<div class="histogram__title">Total orders</div>
+											<a href="#" class="histogram__link">View all</a>
+										</div>
+										<div class="histogram__count">50254</div>
+										<div class="histogram__wrapper">
+											<div class="histogram__column" style="height:100%"></div>
+											<div class="histogram__column" style="height:30%"></div>
+											<div class="histogram__column" style="height:40%"></div>
+											<div class="histogram__column" style="height:50%"></div>
+											<div class="histogram__column" style="height:100%"></div>
+											<div class="histogram__column" style="height:10%"></div>
+											<div class="histogram__column" style="height:55%"></div>
+											<div class="histogram__column" style="height:45%"></div>
+											<div class="histogram__column" style="height:100%"></div>
+											<div class="histogram__column" style="height:12%"></div>
+											<div class="histogram__column" style="height:100%"></div>
+											<div class="histogram__column" style="height:80%"></div>
+											<div class="histogram__column" style="height:75%"></div>
+											<div class="histogram__column" style="height:30%"></div>
+											<div class="histogram__column" style="height:40%"></div>
+											<div class="histogram__column" style="height:50%"></div>
+											<div class="histogram__column" style="height:100%"></div>
+											<div class="histogram__column" style="height:19%"></div>
+											<div class="histogram__column" style="height:90%"></div>
+											<div class="histogram__column" style="height:25%"></div>
+											<div class="histogram__column" style="height:10%"></div>
+											<div class="histogram__column" style="height:30%"></div>
+											<div class="histogram__column" style="height:10%"></div>
+											<div class="histogram__column" style="height:50%"></div>
+											<div class="histogram__column" style="height:98%"></div>
+											<div class="histogram__column" style="height:25%"></div>
+											<div class="histogram__column" style="height:10%"></div>
+											<div class="histogram__column" style="height:30%"></div>
+											<div class="histogram__column" style="height:10%"></div>
+											<div class="histogram__column" style="height:50%"></div>
+											<div class="histogram__column" style="height:98%"></div>
+										</div>
+									</div>
 								</div>
-								<div class="histogram__count">50254</div>
-								<div class="histogram__wrapper">
-									<div class="histogram__column" style="height:100%"></div>
-									<div class="histogram__column" style="height:30%"></div>
-									<div class="histogram__column" style="height:40%"></div>
-									<div class="histogram__column" style="height:50%"></div>
-									<div class="histogram__column" style="height:100%"></div>
-									<div class="histogram__column" style="height:10%"></div>
-									<div class="histogram__column" style="height:55%"></div>
-									<div class="histogram__column" style="height:45%"></div>
-									<div class="histogram__column" style="height:100%"></div>
-									<div class="histogram__column" style="height:12%"></div>
-									<div class="histogram__column" style="height:100%"></div>
-									<div class="histogram__column" style="height:80%"></div>
-									<div class="histogram__column" style="height:75%"></div>
-									<div class="histogram__column" style="height:30%"></div>
-									<div class="histogram__column" style="height:40%"></div>
-									<div class="histogram__column" style="height:50%"></div>
-									<div class="histogram__column" style="height:100%"></div>
-									<div class="histogram__column" style="height:19%"></div>
-									<div class="histogram__column" style="height:90%"></div>
-									<div class="histogram__column" style="height:25%"></div>
-									<div class="histogram__column" style="height:10%"></div>
-									<div class="histogram__column" style="height:30%"></div>
-									<div class="histogram__column" style="height:10%"></div>
-									<div class="histogram__column" style="height:50%"></div>
-									<div class="histogram__column" style="height:98%"></div>
-									<div class="histogram__column" style="height:25%"></div>
-									<div class="histogram__column" style="height:10%"></div>
-									<div class="histogram__column" style="height:30%"></div>
-									<div class="histogram__column" style="height:10%"></div>
-									<div class="histogram__column" style="height:50%"></div>
-									<div class="histogram__column" style="height:98%"></div>
-								</div>
+								<div class="card__title">Histogram</div>
 							</div>
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Avatar</div>
 							</div>
-							<div class="card__title">Histogram</div>
 						</div>
-						<div class="card">
-							<div class="card__content"></div>
-							<div class="card__title">Avatar</div>
+
+						<div class="tabs__content tabs__content_complex content__cards">
+								<div class="card">
+									<div class="card__content">
+										<div class="card__element calendar calendar_card">
+											<div class="calendar__title">October 2019</div>
+											<div class="calendar__wrapper">
+												<div class="calendar__inner">
+													<span class="calendar__item calendar__item_day">Mon</span>
+													<span class="calendar__item calendar__item_day">Tue</span>
+													<span class="calendar__item calendar__item_day">Wed</span>
+													<span class="calendar__item calendar__item_day">Thu</span>
+													<span class="calendar__item calendar__item_day">Fri</span>
+													<span class="calendar__item calendar__item_day">Sat</span>
+													<span class="calendar__item calendar__item_day">Sun</span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item">1</span>
+													<span class="calendar__item">2</span>
+													<span class="calendar__item">3</span>
+													<span class="calendar__item">4</span>
+													<span class="calendar__item">5</span>
+													<span class="calendar__item">6</span>
+													<span class="calendar__item">7</span>
+													<span class="calendar__item">8</span>
+													<span class="calendar__item">9</span>
+													<span class="calendar__item">10</span>
+													<span class="calendar__item">11</span>
+													<span class="calendar__item">12</span>
+													<span class="calendar__item">13</span>
+													<span class="calendar__item">14</span>
+													<span class="calendar__item">15</span>
+													<span class="calendar__item">16</span>
+													<span class="calendar__item">17</span>
+													<span class="calendar__item calendar__item_periodpoint">18</span>
+													<span class="calendar__item calendar__item_period">19</span>
+													<span class="calendar__item calendar__item_period">20</span>
+													<span class="calendar__item calendar__item_period">21</span>
+													<span class="calendar__item calendar__item_period">22</span>
+													<span class="calendar__item calendar__item_periodpoint">23</span>
+													<span class="calendar__item">24</span>
+													<span class="calendar__item">25</span>
+													<span class="calendar__item">26</span>
+													<span class="calendar__item">27</span>
+													<span class="calendar__item">28</span>
+													<span class="calendar__item">29</span>
+													<span class="calendar__item">30</span>
+													<span class="calendar__item">31</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card__title">Calendar</div>
+								</div>
+								<div class="card">
+									<div class="card__content"></div>
+									<div class="card__title">Modal dialog</div>
+								</div>
+								<div class="card">
+									<div class="card__content">
+										<div class="card__element histogram histogram_card">
+											<div class="histogram__header">
+												<div class="histogram__title">Total orders</div>
+												<a href="#" class="histogram__link">View all</a>
+											</div>
+											<div class="histogram__count">50254</div>
+											<div class="histogram__wrapper">
+												<div class="histogram__column" style="height:100%"></div>
+												<div class="histogram__column" style="height:30%"></div>
+												<div class="histogram__column" style="height:40%"></div>
+												<div class="histogram__column" style="height:50%"></div>
+												<div class="histogram__column" style="height:100%"></div>
+												<div class="histogram__column" style="height:10%"></div>
+												<div class="histogram__column" style="height:55%"></div>
+												<div class="histogram__column" style="height:45%"></div>
+												<div class="histogram__column" style="height:100%"></div>
+												<div class="histogram__column" style="height:12%"></div>
+												<div class="histogram__column" style="height:100%"></div>
+												<div class="histogram__column" style="height:80%"></div>
+												<div class="histogram__column" style="height:75%"></div>
+												<div class="histogram__column" style="height:30%"></div>
+												<div class="histogram__column" style="height:40%"></div>
+												<div class="histogram__column" style="height:50%"></div>
+												<div class="histogram__column" style="height:100%"></div>
+												<div class="histogram__column" style="height:19%"></div>
+												<div class="histogram__column" style="height:90%"></div>
+												<div class="histogram__column" style="height:25%"></div>
+												<div class="histogram__column" style="height:10%"></div>
+												<div class="histogram__column" style="height:30%"></div>
+												<div class="histogram__column" style="height:10%"></div>
+												<div class="histogram__column" style="height:50%"></div>
+												<div class="histogram__column" style="height:98%"></div>
+												<div class="histogram__column" style="height:25%"></div>
+												<div class="histogram__column" style="height:10%"></div>
+												<div class="histogram__column" style="height:30%"></div>
+												<div class="histogram__column" style="height:10%"></div>
+												<div class="histogram__column" style="height:50%"></div>
+												<div class="histogram__column" style="height:98%"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card__title">Histogram</div>
+								</div>
+						</div>
+						<div class="tabs__content tabs__content_simple content__cards">
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Tooltip</div>
+							</div>
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Custom form elements</div>
+							</div>
+							<div class="card">
+								<div class="card__content"></div>
+								<div class="card__title">Avatar</div>
+							</div>
 						</div>
 					</div>
+
 				</div>
 			</main>
 			<footer class="footer">
