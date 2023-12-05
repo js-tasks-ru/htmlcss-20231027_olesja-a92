@@ -27,7 +27,7 @@
 #complex-tab:checked ~ .tabs__scroller label[for='complex-tab'],
 #simple-tab:checked ~ .tabs__scroller label[for='simple-tab']{
 	color: var(--black);
-	border-bottom: 5px solid black;
+	border-bottom: 5px solid var(--black);
 }
 
 .tabs{
