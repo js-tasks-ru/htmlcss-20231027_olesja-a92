@@ -28,16 +28,8 @@
     height: 28px;
     border: 1px solid var(--grey-2);
     border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
-}
-
-.radio__icon{
-    border-radius: 14px;
-    width:18px;
-    height:18px;
+    position: relative;
 }
 
 .radio__input:focus ~ .radio__state .radio__title{
@@ -48,8 +40,14 @@
     border:2px solid var(--blue);
 }
 
-.radio__input:checked ~ .radio__state .radio__icon{
-    background: var(--blue);
+.radio__input:checked ~ .radio__state .radio__control:before{
+    content: '\25CF';
+    font-size: 44px;
+    color: var(--blue);
+    position: absolute;
+    top: -17px;
+    height: 100%;
+    left: -1px;
 }
 
 .radio__input:disabled ~ .radio__state .radio__control{
@@ -62,14 +60,4 @@
 
 .radio__input:disabled ~ .radio__state .radio__title{
     color: var(--grey-2);
-}
-
-.radio__input:disabled ~ .radio__state .radio__icon{
-    stroke: var(--grey-2);
-}
-
-.radio-group{
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
 }

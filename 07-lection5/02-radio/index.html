@@ -6,11 +6,11 @@
         <link rel="stylesheet" href="./radio.css">
     </head>
     <body>
-        <div class="radio-group">
+        <div style="display: flex;gap: 16px;flex-direction: column;">
             <label class="radio">
                 <input type="radio" name="radio" class="radio__input">
                 <div class="radio__state">
-                    <div class="radio__control"><div class="radio__icon"></div></div>
+                    <div class="radio__control"></div>
                     <div class="radio__title">Default</div>
                 </div>
             </label>
@@ -18,7 +18,7 @@
             <label class="radio">
                 <input type="radio" name="radio" checked class="radio__input">
                 <div class="radio__state">
-                    <div class="radio__control"><div class="radio__icon"></div></div>
+                    <div class="radio__control"></div>
                     <div class="radio__title">Selected</div>
                 </div>
             </label>
@@ -26,7 +26,7 @@
             <label class="radio">
                 <input type="radio" disabled name="radio" class="radio__input">
                 <div class="radio__state">
-                    <div class="radio__control"><div class="radio__icon"></div></div>
+                    <div class="radio__control"></div>
                     <div class="radio__title">Disabled</div>
                 </div>
             </label>
