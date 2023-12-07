@@ -6,6 +6,8 @@
 	line-height: 36px;
 	color: var(--grey-3);
 	cursor: pointer;
+	margin-right: 40px;
+	display: inline-block;
 }
 
 .tabs__input{
@@ -17,28 +19,23 @@
 	display: none;
 }
 
-#all-tab:checked ~ .tabs__content.tabs__content_all,
-#complex-tab:checked ~ .tabs__content.tabs__content_complex,
-#simple-tab:checked ~ .tabs__content.tabs__content_simple{
-	display: grid;
+.tabs__input_all:checked ~ .tabs__content_all,
+.tabs__input_complex:checked ~ .tabs__content_complex,
+.tabs__input_simple:checked ~ .tabs__content_simple{
+	display: block;
 }
 
-#all-tab:checked ~ .tabs__scroller label[for='all-tab'],
-#complex-tab:checked ~ .tabs__scroller label[for='complex-tab'],
-#simple-tab:checked ~ .tabs__scroller label[for='simple-tab']{
+.tabs__input_all:checked ~ .tabs__scroller .tabs__item_all,
+.tabs__input_complex:checked ~ .tabs__scroller .tabs__item_complex,
+.tabs__input_simple:checked ~ .tabs__scroller .tabs__item_simple{
 	color: var(--black);
 	border-bottom: 5px solid var(--black);
 }
 
-.tabs{
-	position: relative;
-}
-
 .tabs__scroller{
-	position: absolute;
-	top: -109px;
-	display: flex;
-	gap: 40px;
+	width:100%;
+	background: var(--white);
+	filter: drop-shadow(0px 3px 3px rgba(33, 36, 41, 0.05));
 }
 
 @media screen and (max-width:400px) {
