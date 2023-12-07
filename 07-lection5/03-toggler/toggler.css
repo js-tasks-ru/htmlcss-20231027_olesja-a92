@@ -67,9 +67,3 @@
 .toggle__input:disabled ~ .toggle__state .toggle__icon{
     background: var(--grey-3);
 }
-
-.toggle-group{
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-}
