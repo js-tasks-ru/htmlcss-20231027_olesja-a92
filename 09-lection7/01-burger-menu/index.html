@@ -2,11 +2,35 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+    <button class="burger-menu__open" id="burger-menu-open"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="../../assets/images/icons.svg#menu"></svg></button>
+    <div class="burger-menu" id="burger-menu">
+        <div class="burger-menu__wrapper">
+            <div class="burger-menu__header">
+                <button class="burger-menu__close" id="burger-menu-close"><svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="../../assets/images/icons.svg#x"></svg></button>
+                <svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32"><use xlink:href="../../assets/images/icons.svg#logo"></svg>
+            </div>
+            <div class="burger-menu__theme">
+                Dark mode
+            </div>
+            <div class="burger-menu__title">Components</div>
+            <div class="burger-menu__navigation">
+                <a class="burger-menu__navigation-item" href="#">Modal</a>
+                <a class="burger-menu__navigation-item" href="#">Tooltip</a>
+                <a class="burger-menu__navigation-item" href="#">Avatar</a>
+                <a class="burger-menu__navigation-item" href="#">Calendar</a>
+                <a class="burger-menu__navigation-item" href="#">Histogram</a>
+                <a class="burger-menu__navigation-item" href="#">Custom form elements</a>
+                <a class="burger-menu__navigation-item burger-menu__navigation-item_single" href="#">Main page</a>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
