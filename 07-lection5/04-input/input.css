@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-.input{
-    width: 350px;
-}
-
 .input__wrapper{
     position: relative;
 }
