@@ -1,5 +1,5 @@
 .content{
-	background: var(--content-background);
+	background: var(--grey-bg);
 	padding: 68px 24px;
 }
 
@@ -25,7 +25,7 @@
 	}
 
 	.content_inner{
-		background: #fff;
+		background: var(--main-bg);
 	}
 
 	.content_inner{

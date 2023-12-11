@@ -1,15 +1,15 @@
 .footer {
-	background: #FFF;
+	background: var(--main-bg);
 	padding: 71px 30px 136px;
 }
 
 .footer_inner{
 	padding: 56px;
-	background: var(--content-background);
+	background: var(--grey-bg);
 }
 
 .footer__title{
-	color: var(--black);
+	color: var(--font-color);
 	font-family: Inter;
 	font-size: 38px;
 	font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 .footer__title_small{
-	color: var(--grey-3);
+	color: var(--text-secondary);
 	font-size: 12px;
 	line-height: 18px;
 	letter-spacing: 0.48px;
@@ -29,7 +29,7 @@
 }
 
 .footer__text{
-	color: var(--black);
+	color: var(--font-color);
 	text-align: center;
 	font-family: Inter;
 	font-size: 16px;

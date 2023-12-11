@@ -4,7 +4,7 @@
 
 .inner-navigation__item{
     display: block;
-    color: var(--black);
+    color: var(--font-color);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -14,7 +14,7 @@
 }
 
 .inner-navigation__item:hover{
-    color: var(--notificaiton);
+    color: var(--active-text-color);
 }
 
 .inner-navigation__item_single{

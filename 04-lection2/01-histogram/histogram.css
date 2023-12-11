@@ -1,8 +1,8 @@
 .histogram{
-    color: var(--black);
+    color: var(--font-color);
     font-family: Inter;
-    background: #FFF;
-    border: 1px solid var(--grey-3);
+    background: var(--main-bg);
+    border: 1px solid var(--text-secondary);
     border-radius: 8px;
     padding: 0.762em 1.143em 1.143em;
 }
@@ -28,7 +28,7 @@
 }
 
 .histogram__link{
-    color: var(--blue);
+    color: var(--primary);
     font-size: 0.762em;
     font-style: normal;
     font-weight: 400;
@@ -50,7 +50,7 @@
 }
 
 .histogram__column{
-    background: var(--blue);
+    background: var(--primary);
     flex: 1;
 }
 

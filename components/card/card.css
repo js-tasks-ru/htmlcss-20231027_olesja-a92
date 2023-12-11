@@ -1,9 +1,9 @@
 .card{
     border-radius: 12px;
-    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    box-shadow: 0px 2px 4px 0px var(--shadow-color);
     grid-auto-rows: max-content;
     width: 100%;
-    background: #FFFFFF;
+    background: var(--main-bg);
     display: grid;
     grid-template-rows: 323px 1fr;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .card__title{
-    color: var(--black);
+    color: var(--font-color);
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -42,7 +42,7 @@
 
     .card__content{
         font-size: 10px;
-        box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+        box-shadow: 0px 2px 4px var(--shadow-color);
     }
 
     .card__title{
