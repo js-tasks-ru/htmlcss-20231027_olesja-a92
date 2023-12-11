@@ -19,6 +19,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .burger-menu[data-open]{
@@ -63,11 +65,6 @@
 
 .burger-menu__navigation-item_single{
     margin-top: 72px;
-}
-
-.burger-menu__open{
-    border:none;
-    background: none;
 }
 
 .burger-menu__close{
