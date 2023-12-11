@@ -1,0 +1,63 @@
+.radio{
+    position: relative;
+}
+
+.radio__input{
+    position: absolute;
+    left: -100vw;
+}
+
+.radio__title{
+    color: var(--grey-4);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.radio__state{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor:pointer;
+}
+
+.radio__control{
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 14px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.radio__input:focus ~ .radio__state .radio__title{
+    text-decoration: underline;
+}
+
+.radio__input:checked ~ .radio__state .radio__control{
+    border:2px solid var(--blue);
+}
+
+.radio__input:checked ~ .radio__state .radio__control:before{
+    content: '\25CF';
+    font-size: 44px;
+    color: var(--blue);
+    position: absolute;
+    top: -17px;
+    height: 100%;
+    left: -1px;
+}
+
+.radio__input:disabled ~ .radio__state .radio__control{
+    background: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state{
+    cursor: default;
+}
+
+.radio__input:disabled ~ .radio__state .radio__title{
+    color: var(--grey-2);
+}
