@@ -1,5 +1,5 @@
 .header {
-	background: #FFF;
+	background: var(--main-bg);
 	min-height: auto;
 	height: max-content;
 	padding: 24px 24px 0px;
@@ -12,12 +12,22 @@
 	font-weight: 500;
 	line-height: 64px; 
 	margin: 40px 0;
-	color: var(--black);
+	color: var(--font-color);
 }
 
 .header_inner{
-	background: var(--content-background);
+	background: var(--grey-bg);
 	filter: none;
+}
+
+.header__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header__logo{
+	fill: var(--font-color);
 }
 
 @media screen and (max-width: 400px){
@@ -34,10 +44,10 @@
 		font-weight: 400;
 		line-height: 38px;
 		margin: 40px 0;
-		color: var(--grey-4);
+		color: var(--input-text-color);
 	}
 
-	.header__logo{
-		text-align: center;
+	.header__top{
+		justify-content: center;
 	}
 }

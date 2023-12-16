@@ -10,7 +10,7 @@
 @import '../../components/inner-navigation/inner-navigation.css';
 @import '../../components/inner-content/inner-content.css';
 @import '../../components/inner-container/inner-container.css';
-
+@import '../../components/theme-changer/theme-changer.css';
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -27,6 +27,8 @@
     --modal-title: #334D6E;
     --modal-overlay: rgba(196, 196, 196, 0.5);
 
+    --shadow-color: #2124290d;
+
     --error: var(--red);
     --success: var(--blue);
 
@@ -42,6 +44,49 @@
 
     --content-background: #F9FAFC;
     --notificaiton: #D84910;
+
+    --text-primary: var(--black);
+    --text-secondary: var(--grey-3);
+    --active-text-color: var(--notificaiton);
+
+    --main-bg: var(--light-bg);
+    --grey-bg: #F9FAFC;
+    --white-bg: var(--white);
+    --light-bg: var(--white);
+    --dark-bg: var(--black);
+    --card-bg: var(--white);
+
+    --font-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
+}
+
+html[data-theme-dark] {
+    --primary-h: 228;
+    --primary-s: 81%;
+    --primary-l: 59%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --primary-lighten: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%));
+    --primary-darken: hsl(var(--primary-h), calc(var(--primary-s) - 12%), calc(var(--primary-l) - 14%));
+
+    --main-bg: var(--black);
+    --shadow-color: #ffffff0d;
+    --font-color: #ffffff75;
+    --dark-bg: var(--grey-1);
+    --white-bg: var(--black);
+    --light-bg: var(--grey-4);
+    --grey-bg: var(--grey-4);
+    --card-bg: var(--black);
+    --text-primary: var(--white);
+    --active-text-color: var(--grey-2);
+    --input-text-color: var(--font-color);
+
+    --calendar-item: var(--font-color);
+    --calendar-day: var(--font-color);
+    --calendar-period: var(--primary-lighten);
+}
+
+html[data-theme-dark] img {
+    filter: brightness(.8) contrast(1.2);
 }
 
 @media screen and (max-width:400px) {

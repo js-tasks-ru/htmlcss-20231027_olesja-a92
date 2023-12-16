@@ -1,0 +1,23 @@
+.theme-changer{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.theme-changer__dark{
+    fill: var(--text-secondary);
+}
+
+.theme-changer__light{
+    fill: var(--font-color);
+}
+
+.theme-changer__light{
+    order: -1;
+}
+
+@media screen and (max-width: 400px){
+    .theme-changer{
+        display: none;
+    }
+}

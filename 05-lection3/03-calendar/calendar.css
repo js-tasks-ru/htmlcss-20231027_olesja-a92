@@ -1,6 +1,6 @@
 .calendar{
-    background: #FFF;
-    border: 1px solid var(--grey-3);
+    background: var(--main-bg);
+    border: 1px solid var(--text-secondary);
     padding: 1.333em 1.238em 1.524em;
     border-radius: 8px;
     width: 100%;
@@ -53,8 +53,8 @@
 }
 
 .calendar__item_periodpoint{
-    color: #FFF;
-    background: var(--blue);
+    color: var(--main-bg);
+    background: var(--primary);
 }
 
 .calendar__item_period{

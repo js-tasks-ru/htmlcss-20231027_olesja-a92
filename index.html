@@ -8,19 +8,29 @@
 		<link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
 		<link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
 		<link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+		<link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
+		<script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
     <body>
 		<div class="page">
 			<header class="header">
 				<div class="container">
-					<div class="header__logo">
-						<svg width="110" height="32" viewBox="0 0 110 32">
-							<g>
-							<rect x="0" y="1" width="30" height="30"></rect>
-							<circle cx="54" cy="16" r="16"></circle>
-								<polygon points="78 32, 110 32, 78 0"/>
-							</g>
+					<div class="header__top">
+						<svg class="header__logo" width="110" height="32" viewBox="0 0 110 32">
+							<use xlink:href="./assets/images/icons.svg#logo"></use>
 						</svg>
+						<div class="theme-changer">
+							<label class="toggle">
+								<input id="theme-changer" type="checkbox" class="toggle__input">
+								<div class="toggle__state">
+									<div class="toggle__control">
+										<div class="toggle__icon"></div>
+									</div>
+								</div>
+							</label>
+							<svg class="theme-changer__light" viewBox="0 0 24 24" width="24" height="24"><use xlink:href="./assets/images/icons.svg#sun"></svg>
+							<svg class="theme-changer__dark" viewBox="0 0 24 24" width="24" height="24"><use xlink:href="./assets/images/icons.svg#moon"></svg>
+						</div>
 					</div>
 					<h1 class="header__title">Reusable component library</h1>
 				</div>
